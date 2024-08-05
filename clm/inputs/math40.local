@@ -1,0 +1,21 @@
+     *
+     * @param absoluteAccuracy Absolute accuracy.
+     * @param maximalOrder maximal order.
+     * @exception NumberIsTooSmallException if maximal order is lower than 2
+     */
+    public BracketingNthOrderBrentSolver(final double absoluteAccuracy,
+                                         final int maximalOrder)
+        throws NumberIsTooSmallException {
+        super(absoluteAccuracy);
+        if (maximalOrder < 2) {
+            <mask>
+        }
+        this.maximalOrder = maximalOrder;
+        this.allowed = AllowedSolution.ANY_SIDE;
+    }
+
+    /**
+     * Construct a solver.
+     *
+     * @param relativeAccuracy Relative accuracy.
+     * @param absoluteAccuracy Absolute accuracy.

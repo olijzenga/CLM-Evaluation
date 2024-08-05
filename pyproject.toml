@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "clm"
+version = "0.1.0"
+description = ""
+authors = ["Oebele Lijzenga <oebelelijzenga@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+transformers = "4.37.2"
+torch = { version = ">=2.0.0, !=2.0.1, !=2.1.0" }
+fire = "^0.5.0"
+sentencepiece = "^0.1.99"
+setuptools = "^68.2.2"
+flask = "^3.0.0"
+marshmallow = "^3.20.1"
+accelerate = "^0.25.0"
+bitsandbytes = "^0.42.0"
+tiktoken = "^0.5.2"
+
+[tool.poetry.group.dev.dependencies]
+black = {extras = ["d"], version = "^23.11.0"}
+pyinstaller = "^6.2.0"
+ipykernel = "^6.28.0"
+widgetsnbextension = "^4.0.9"
+huggingface-hub = {extras = ["cli"], version = "^0.20.2"}
+ipywidgets = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 110

@@ -1,0 +1,1 @@
+def greet(user): print(f'hello <extra_id_0>!')
